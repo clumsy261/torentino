@@ -1,0 +1,17 @@
+[package]
+name = "torentino-pure"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+sha1 = "0.10"
+bytes = "1"
+rand = "0.8"
+thiserror = "2"
+log = "0.4"
+clap = { version = "4", features = ["derive"] }
+url = "2"
+rustls = { version = "0.23", default-features = false, features = ["ring", "std", "tls12"] }
+rustls-native-certs = "0.8"
+tokio-rustls = "0.26"
